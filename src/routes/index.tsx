@@ -94,7 +94,7 @@ function CoverScreen({ open, onOpen }: { open: boolean; onOpen: () => void }) {
               <path d="M8 5v14l11-7z" />
             </svg>
           </span>
-          <span className="font-title text-[0.72rem] uppercase tracking-[0.38em] text-hall-light group-hover:text-white">
+          <span className="font-title text-[0.78rem] font-bold uppercase tracking-[0.38em] text-white group-hover:text-hall-light">
             Tap To Open
           </span>
         </button>
@@ -294,7 +294,7 @@ function Invitation() {
           style={{ paddingTop: "calc(env(safe-area-inset-top) + 10svh)" }}
         >
           <p
-            className={`font-body text-[0.58rem] uppercase tracking-[0.42em] text-hall-light/85 reveal ${isHeroTextVisible ? "reveal-on" : ""}`}
+            className={`font-body text-[0.68rem] font-bold uppercase tracking-[0.44em] text-hall-glow drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)] reveal ${isHeroTextVisible ? "reveal-on" : ""}`}
             style={{ transitionDelay: "300ms" }}
           >
             Shubh Vivah
@@ -303,16 +303,16 @@ function Invitation() {
             className={`mt-5 reveal ${isHeroTextVisible ? "reveal-on" : ""}`}
             style={{ transitionDelay: "900ms" }}
           >
-            <h1 className="font-display text-[clamp(2.1rem,9.5vw,4.2rem)] font-light leading-[1.05] gold-text">
+            <h1 className="font-display text-[clamp(2.1rem,9.5vw,4.2rem)] font-bold leading-[1.05] gold-text drop-shadow-[0_4px_16px_rgba(0,0,0,0.95)]">
               <span className="block">{wedding.groom}</span>
-              <span className="block font-body text-[0.62rem] sm:text-[0.7rem] font-normal uppercase tracking-[0.24em] text-hall-light/85 mt-2 mb-2">
+              <span className="block font-body text-[0.68rem] sm:text-[0.76rem] font-semibold uppercase tracking-[0.24em] text-hall-light drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)] mt-2 mb-2">
                 S/O {wedding.groomParents}
               </span>
-              <span className="block font-title text-[0.34em] tracking-[0.3em] text-hall-light/90 my-2">
+              <span className="block font-title text-[0.36em] font-bold tracking-[0.3em] text-hall-glow drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)] my-2">
                 &amp;
               </span>
               <span className="block">{wedding.bride}</span>
-              <span className="block font-body text-[0.62rem] sm:text-[0.7rem] font-normal uppercase tracking-[0.24em] text-hall-light/85 mt-2 mb-2">
+              <span className="block font-body text-[0.68rem] sm:text-[0.76rem] font-semibold uppercase tracking-[0.24em] text-hall-light drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)] mt-2 mb-2">
                 D/O {wedding.brideParents}
               </span>
             </h1>
@@ -322,12 +322,12 @@ function Invitation() {
             style={{ transitionDelay: "1200ms" }}
           >
             <Ornament className="mt-6" width={200} />
-            <p className="mt-4 font-title text-[0.82rem] tracking-[0.36em] text-hall-light">
+            <p className="mt-4 font-title text-[0.95rem] font-bold tracking-[0.36em] text-hall-glow drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)]">
               {wedding.shortDate}
             </p>
           </div>
           <p
-            className={`mx-auto mt-5 max-w-[19rem] font-display text-[1.02rem] italic leading-relaxed text-ivory/90 reveal ${isHeroTextVisible ? "reveal-on" : ""}`}
+            className={`mx-auto mt-5 max-w-[21rem] font-display text-[1.12rem] font-medium italic leading-relaxed text-ivory drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)] reveal ${isHeroTextVisible ? "reveal-on" : ""}`}
             style={{ transitionDelay: "1500ms" }}
           >
             {wedding.invitationLine}
@@ -365,19 +365,19 @@ function Invitation() {
           <Reveal>
             <h3
               id="venue-title"
-              className="font-title text-[0.66rem] uppercase tracking-[0.42em] text-hall-glow"
+              className="font-title text-[0.74rem] font-bold uppercase tracking-[0.42em] text-hall-glow"
             >
               The Venue
             </h3>
           </Reveal>
           <Reveal delay={120}>
-            <p className="mt-5 font-display text-[clamp(1.5rem,6.4vw,1.9rem)] font-light text-ivory">
+            <p className="mt-5 font-display text-[clamp(1.6rem,6.8vw,2.1rem)] font-semibold text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.7)]">
               {wedding.venue.name}
             </p>
-            <p className="mx-auto mt-3 max-w-[22rem] text-[0.92rem] font-light leading-relaxed text-ivory/75">
+            <p className="mx-auto mt-3 max-w-[22rem] text-[1rem] font-medium leading-relaxed text-ivory drop-shadow-[0_1px_4px_rgba(0,0,0,0.6)]">
               {wedding.venue.address}
             </p>
-            <p className="mt-2 text-[0.72rem] uppercase tracking-[0.26em] text-hall-glow/80">
+            <p className="mt-2 text-[0.8rem] font-bold uppercase tracking-[0.26em] text-hall-glow drop-shadow-[0_1px_4px_rgba(0,0,0,0.6)]">
               {wedding.venue.hint}
             </p>
           </Reveal>
@@ -397,14 +397,14 @@ function Invitation() {
               href={wedding.venue.mapsUrl}
               target="_blank"
               rel="noreferrer"
-              className="press inline-flex min-h-[48px] items-center justify-center rounded-[2px] border border-hall-glow/60 bg-hall-deep/30 px-6 font-body text-[0.66rem] uppercase tracking-[0.32em] text-hall-light"
+              className="press inline-flex min-h-[48px] items-center justify-center rounded-[2px] border border-hall-glow/70 bg-hall-deep/60 px-6 font-body text-[0.72rem] font-bold uppercase tracking-[0.32em] text-white shadow-md hover:border-hall-glow"
             >
               Open in Google Maps
             </a>
             <button
               type="button"
               onClick={addToCalendar}
-              className="press inline-flex min-h-[48px] items-center justify-center rounded-[2px] px-6 font-body text-[0.66rem] uppercase tracking-[0.32em] text-ink"
+              className="press inline-flex min-h-[48px] items-center justify-center rounded-[2px] px-6 font-body text-[0.72rem] font-bold uppercase tracking-[0.32em] text-ink shadow-md"
               style={{ background: "var(--grad-gold)" }}
             >
               Add to Calendar
@@ -433,33 +433,33 @@ function Invitation() {
         <div className="relative">
           <Reveal>
             <Ornament width={190} />
-            <p className="mt-8 font-display text-[clamp(2.3rem,12vw,3.2rem)] font-light leading-tight gold-text">
+            <p className="mt-8 font-display text-[clamp(2.3rem,12vw,3.2rem)] font-semibold leading-tight gold-text drop-shadow-[0_4px_16px_rgba(0,0,0,0.8)]">
               {wedding.groom} &amp; {wedding.bride}
             </p>
-            <p className="mt-4 font-title text-[0.74rem] tracking-[0.34em] text-hall-light">
+            <p className="mt-4 font-title text-[0.88rem] font-bold tracking-[0.34em] text-hall-glow drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">
               {wedding.shortDate}
             </p>
-            <p className="mx-auto mt-6 max-w-[20rem] font-display text-[1.05rem] italic text-ivory/80">
+            <p className="mx-auto mt-6 max-w-[20rem] font-display text-[1.12rem] font-medium italic text-ivory drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">
               {wedding.closing}
             </p>
             <div className="rule-gold mx-auto mt-10 w-32" />
           </Reveal>
 
           {/* Bottom corner credits at the very end */}
-          <div className="mt-14 flex flex-col sm:flex-row items-center justify-between gap-4 border-t border-hall-glow/20 pt-6 text-[0.58rem] tracking-[0.24em] uppercase text-hall-light/50">
+          <div className="mt-14 flex flex-col sm:flex-row items-center justify-between gap-4 border-t border-hall-glow/30 pt-6 text-[0.62rem] font-semibold tracking-[0.24em] uppercase text-hall-light/80">
             <a
               href="https://www.instagram.com/invitestory.in/"
               target="_blank"
               rel="noreferrer"
-              className="transition-colors hover:text-hall-glow/80"
+              className="transition-colors hover:text-hall-glow"
             >
               Follow @invitestory.in
             </a>
             <div className="flex items-center gap-2 font-body text-right">
-              <span className="text-hall-light/60">Photography &amp; Film:</span>
+              <span className="text-hall-light/80">Photography &amp; Film:</span>
               <a
                 href={`tel:${wedding.studio.phone}`}
-                className="font-title tracking-[0.2em] text-hall-glow hover:text-white transition-colors"
+                className="font-title font-bold tracking-[0.2em] text-hall-glow hover:text-white transition-colors"
                 title="Call STR STUDIO"
               >
                 {wedding.studio.name} · {wedding.studio.phone}

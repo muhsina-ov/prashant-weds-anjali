@@ -5,7 +5,7 @@ export const wedding = {
   groomParents: "Mr. Atul Kumar Mehrotra & Mrs. Ritu Mehrotra",
   invitationLine: "Together with their families, request the honour of your presence",
   dateLabel: "Wednesday, 25 November 2026",
-  shortDate: "25 . 11 . 2026",
+  shortDate: "25-11-2026",
   countdownTarget: "2026-11-25T19:30:00+05:30",
   story: [
     "Introduced by family, brought together by long talks and unforgettable dates.",
@@ -15,7 +15,7 @@ export const wedding = {
     {
       name: "Engagement",
       date: "25 November 2026",
-      time: "11:00 AM",
+      time: "9:30 AM",
       venue: "The Auravya Grand, Mohammadi",
       note: "Two souls, two rings, and a sacred promise celebrated with family.",
     },

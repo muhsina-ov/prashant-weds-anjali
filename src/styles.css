@@ -180,6 +180,7 @@
     background-color: var(--hall-deep);
     color: var(--ivory);
     font-family: var(--font-body);
+    font-weight: 500;
     -webkit-font-smoothing: antialiased;
   }
 
@@ -194,6 +195,7 @@
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+  filter: drop-shadow(0 2px 10px rgba(0, 0, 0, 0.85));
 }
 
 @utility rule-gold {
@@ -392,9 +394,11 @@
 /* ── Editorial story and interactive celebration chapters ── */
 .section-kicker {
   color: var(--hall-glow);
-  font-size: 0.64rem;
+  font-size: 0.68rem;
+  font-weight: 700;
   letter-spacing: 0.38em;
   text-transform: uppercase;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
 }
 .story-editorial {
   position: relative;
@@ -428,11 +432,12 @@
   margin-top: 1.2rem;
   font-family: var(--font-display);
   font-size: clamp(3rem, 6vw, 5.8rem);
-  font-weight: 300;
-  line-height: 0.94;
-  letter-spacing: -0.035em;
+  font-weight: 600;
+  line-height: 0.96;
+  letter-spacing: -0.02em;
   text-wrap: balance;
-  color: var(--ivory);
+  color: #ffffff;
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.7);
 }
 .story-editorial__prose {
   max-width: 570px;
@@ -440,17 +445,19 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
-  color: rgba(243, 235, 220, 0.7);
-  font-size: 0.96rem;
-  font-weight: 300;
+  color: #f7e9c6;
+  font-size: 1.05rem;
+  font-weight: 500;
   line-height: 1.75;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
 }
 .countdown-label {
   margin-top: 3.5rem;
   padding-top: 1.5rem;
   border-top: 1px solid rgba(233, 200, 121, 0.3);
   color: var(--hall-glow);
-  font-size: 0.62rem;
+  font-size: 0.68rem;
+  font-weight: 700;
   letter-spacing: 0.32em;
   text-transform: uppercase;
 }
@@ -479,23 +486,28 @@
   font-family: var(--font-display);
   font-size: clamp(1.7rem, 4vw, 3rem);
   line-height: 1;
-  color: var(--hall-light);
+  color: #ffffff;
+  font-weight: 700;
   font-variant-numeric: tabular-nums;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
 }
 .editorial-countdown small {
   display: block;
   margin-top: 0.65rem;
-  color: rgba(233, 200, 121, 0.68);
-  font-size: 0.52rem;
-  letter-spacing: 0.2em;
+  color: var(--hall-glow);
+  font-size: 0.58rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
   text-transform: uppercase;
 }
 .story-date {
   margin-top: 1rem;
-  color: rgba(243, 235, 220, 0.5);
+  color: var(--hall-light);
   font-family: var(--font-display);
-  font-size: 1rem;
+  font-size: 1.15rem;
   font-style: italic;
+  font-weight: 600;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
 }
 
 .celebrations-editorial {
@@ -516,16 +528,19 @@
 .celebrations-editorial__heading h2 {
   font-family: var(--font-display);
   font-size: clamp(3rem, 7vw, 6.4rem);
-  font-weight: 300;
-  line-height: 0.9;
-  letter-spacing: -0.04em;
-  color: var(--ivory);
+  font-weight: 600;
+  line-height: 0.92;
+  letter-spacing: -0.03em;
+  color: #ffffff;
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.7);
 }
 .celebrations-editorial__heading > p:last-child {
   max-width: 370px;
-  color: rgba(243, 235, 220, 0.58);
-  font-weight: 300;
+  color: #f7e9c6;
+  font-weight: 500;
+  font-size: 1.05rem;
   line-height: 1.65;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
 }
 .celebration-stage {
   position: relative;
@@ -553,7 +568,7 @@
   top: 50%;
   width: min(36%, 390px);
   transform: translateY(-50%);
-  color: var(--ivory);
+  color: #ffffff;
   animation: chapter-in 600ms var(--ease-silk) both;
 }
 @keyframes chapter-in {
@@ -569,50 +584,61 @@
 .event-number {
   display: block;
   margin-bottom: 2rem;
-  color: rgba(233, 200, 121, 0.45);
+  color: var(--hall-glow);
   font-family: var(--font-display);
   font-size: 4rem;
+  font-weight: 700;
   line-height: 0.8;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
 }
 .celebration-stage__content > p:first-of-type {
   color: var(--hall-glow);
-  font-size: 0.58rem;
-  letter-spacing: 0.2em;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
   text-transform: uppercase;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.7);
 }
 .celebration-stage__content h3 {
   margin-top: 0.8rem;
   font-family: var(--font-display);
   font-size: clamp(3rem, 6vw, 5rem);
-  font-weight: 300;
-  line-height: 0.9;
+  font-weight: 600;
+  line-height: 0.92;
+  color: #ffffff;
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.8);
 }
 .event-note {
   margin-top: 1.4rem;
   font-family: var(--font-display);
-  font-size: 1.3rem;
+  font-size: 1.35rem;
   font-style: italic;
-  color: var(--hall-light);
+  font-weight: 500;
+  color: #f7e9c6;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
 }
 .event-venue {
   margin-top: 2.2rem;
   padding-top: 1.2rem;
-  border-top: 1px solid rgba(233, 200, 121, 0.28);
-  color: rgba(243, 235, 220, 0.6);
-  font-size: 0.82rem;
+  border-top: 1px solid rgba(233, 200, 121, 0.35);
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 600;
   line-height: 1.5;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
 }
 .celebration-selector {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  border-bottom: 1px solid rgba(233, 200, 121, 0.25);
+  border-bottom: 1px solid rgba(233, 200, 121, 0.35);
 }
 .celebration-selector button {
   position: relative;
   padding: 1.4rem 0.5rem 1.2rem;
-  color: rgba(243, 235, 220, 0.42);
-  font-size: 0.61rem;
-  letter-spacing: 0.18em;
+  color: rgba(247, 233, 198, 0.75);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
   cursor: pointer;
   transition:
@@ -630,11 +656,12 @@
   transition: right 350ms var(--ease-silk);
 }
 .celebration-selector button:hover {
-  color: var(--hall-light);
-  background: rgba(233, 200, 121, 0.04);
+  color: #ffffff;
+  background: rgba(233, 200, 121, 0.08);
 }
 .celebration-selector button.is-active {
-  color: var(--hall-light);
+  color: #ffffff;
+  font-weight: 700;
 }
 .celebration-selector button.is-active::before {
   right: 0;
@@ -642,9 +669,10 @@
 .celebration-selector button span {
   display: block;
   margin-bottom: 0.45rem;
-  color: rgba(233, 200, 121, 0.42);
+  color: var(--hall-glow);
   font-family: var(--font-display);
-  font-size: 1.05rem;
+  font-size: 1.15rem;
+  font-weight: 700;
   letter-spacing: 0;
 }
 
