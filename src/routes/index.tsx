@@ -244,14 +244,14 @@ function Invitation() {
           }`}
         />
 
-        {/* Ambient overlay */}
+        {/* Ambient overlay with deeper contrast */}
         <div
           className={`absolute inset-0 pointer-events-none z-15 transition-opacity duration-1000 ${
             isHeroTextVisible ? "opacity-100" : "opacity-0"
           }`}
           style={{
             background:
-              "linear-gradient(180deg, rgba(74,51,18,0.72) 0%, rgba(110,77,25,0.28) 45%, rgba(74,51,18,0.05) 65%, rgba(74,51,18,0.55) 100%)",
+              "linear-gradient(180deg, rgba(20,11,3,0.8) 0%, rgba(35,19,5,0.65) 35%, rgba(18,9,2,0.82) 65%, rgba(10,5,1,0.95) 100%)",
           }}
         />
         {isHeroTextVisible && <LightRain />}
@@ -305,14 +305,14 @@ function Invitation() {
           >
             <h1 className="font-display text-[clamp(2.1rem,9.5vw,4.2rem)] font-bold leading-[1.05] gold-text drop-shadow-[0_4px_16px_rgba(0,0,0,0.95)]">
               <span className="block">{wedding.groom}</span>
-              <span className="block font-body text-[0.68rem] sm:text-[0.76rem] font-semibold uppercase tracking-[0.24em] text-hall-light drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)] mt-2 mb-2">
+              <span className="block font-body text-[0.68rem] sm:text-[0.76rem] font-bold uppercase tracking-[0.24em] text-[#fce8b8] [text-shadow:0_2px_8px_rgba(0,0,0,1),0_0_12px_rgba(0,0,0,0.9)] mt-2 mb-2">
                 S/O {wedding.groomParents}
               </span>
-              <span className="block font-title text-[0.36em] font-bold tracking-[0.3em] text-hall-glow drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)] my-2">
+              <span className="block font-title text-[0.36em] font-bold tracking-[0.3em] text-hall-glow [text-shadow:0_2px_8px_rgba(0,0,0,1)] my-2">
                 &amp;
               </span>
               <span className="block">{wedding.bride}</span>
-              <span className="block font-body text-[0.68rem] sm:text-[0.76rem] font-semibold uppercase tracking-[0.24em] text-hall-light drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)] mt-2 mb-2">
+              <span className="block font-body text-[0.68rem] sm:text-[0.76rem] font-bold uppercase tracking-[0.24em] text-[#fce8b8] [text-shadow:0_2px_8px_rgba(0,0,0,1),0_0_12px_rgba(0,0,0,0.9)] mt-2 mb-2">
                 D/O {wedding.brideParents}
               </span>
             </h1>
@@ -322,16 +322,19 @@ function Invitation() {
             style={{ transitionDelay: "1200ms" }}
           >
             <Ornament className="mt-6" width={200} />
-            <p className="mt-4 font-title text-[0.95rem] font-bold tracking-[0.36em] text-hall-glow drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)]">
-              {wedding.shortDate}
-            </p>
+            {/* Dark, high-contrast container for Date & Invitation text */}
+            <div className="mx-auto mt-5 max-w-[22rem] sm:max-w-[24rem] rounded-2xl border border-hall-glow/45 bg-[#0a0501]/85 px-6 py-4 shadow-[0_12px_36px_rgba(0,0,0,0.95),0_0_20px_rgba(0,0,0,0.8)] backdrop-blur-md">
+              <div className="inline-flex items-center justify-center rounded-full border border-hall-glow/60 bg-[#150a02]/95 px-5 py-1.5 shadow-[0_4px_16px_rgba(0,0,0,0.9)]">
+                <p className="font-title text-[0.95rem] sm:text-[1.02rem] font-black tracking-[0.34em] text-[#fad683] [text-shadow:0_2px_8px_rgba(0,0,0,1)]">
+                  {wedding.shortDate}
+                </p>
+              </div>
+              <div className="mx-auto my-3.5 h-px w-20 bg-gradient-to-r from-transparent via-hall-glow/60 to-transparent" />
+              <p className="font-display text-[1.12rem] sm:text-[1.18rem] font-semibold italic leading-relaxed text-[#fffbf2] [text-shadow:0_2px_8px_rgba(0,0,0,1)]">
+                {wedding.invitationLine}
+              </p>
+            </div>
           </div>
-          <p
-            className={`mx-auto mt-5 max-w-[21rem] font-display text-[1.12rem] font-medium italic leading-relaxed text-ivory drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)] reveal ${isHeroTextVisible ? "reveal-on" : ""}`}
-            style={{ transitionDelay: "1500ms" }}
-          >
-            {wedding.invitationLine}
-          </p>
         </div>
 
         <div
@@ -436,12 +439,18 @@ function Invitation() {
             <p className="mt-8 font-display text-[clamp(2.3rem,12vw,3.2rem)] font-semibold leading-tight gold-text drop-shadow-[0_4px_16px_rgba(0,0,0,0.8)]">
               {wedding.groom} &amp; {wedding.bride}
             </p>
-            <p className="mt-4 font-title text-[0.88rem] font-bold tracking-[0.34em] text-hall-glow drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">
-              {wedding.shortDate}
-            </p>
-            <p className="mx-auto mt-6 max-w-[20rem] font-display text-[1.12rem] font-medium italic text-ivory drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">
-              {wedding.closing}
-            </p>
+            {/* Dark high-contrast container for Date & Closing text */}
+            <div className="mx-auto mt-6 max-w-[21rem] sm:max-w-[23rem] rounded-2xl border border-hall-glow/40 bg-[#0a0501]/85 px-6 py-4 shadow-[0_12px_36px_rgba(0,0,0,0.95)] backdrop-blur-md">
+              <div className="inline-flex items-center justify-center rounded-full border border-hall-glow/50 bg-[#150a02]/95 px-4 py-1.5 shadow-[0_4px_14px_rgba(0,0,0,0.8)]">
+                <p className="font-title text-[0.9rem] font-extrabold tracking-[0.32em] text-[#fad683] [text-shadow:0_2px_8px_rgba(0,0,0,1)]">
+                  {wedding.shortDate}
+                </p>
+              </div>
+              <div className="mx-auto my-3 h-px w-16 bg-gradient-to-r from-transparent via-hall-glow/50 to-transparent" />
+              <p className="font-display text-[1.12rem] font-semibold italic leading-relaxed text-[#fffbf2] [text-shadow:0_2px_8px_rgba(0,0,0,1)]">
+                {wedding.closing}
+              </p>
+            </div>
             <div className="rule-gold mx-auto mt-10 w-32" />
           </Reveal>
 
