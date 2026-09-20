@@ -18,18 +18,52 @@ import { CursorGlow, ExperienceRail, PetalVeil } from "@/components/invite/Inter
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: `${wedding.groom} & ${wedding.bride} — ${wedding.shortDate}` },
+      { title: "Dr. Prashant & Dr. Anjali — Wedding Invitation" },
       {
         name: "description",
-        content: `${wedding.groom} weds ${wedding.bride} on ${wedding.dateLabel} at ${wedding.venue.name}. Events, venue and calendar details.`,
-      },
-      { property: "og:title", content: `${wedding.groom} & ${wedding.bride}` },
-      {
-        property: "og:description",
-        content: `An invitation to our wedding — ${wedding.dateLabel}, ${wedding.venue.name}.`,
+        content:
+          "Join us to celebrate the wedding of Dr. Prashant & Dr. Anjali on 25 November 2026 at The Auravya Grand, Mohammadi.",
       },
       { property: "og:type", content: "website" },
+      { property: "og:title", content: "Dr. Prashant & Dr. Anjali — Wedding Invitation" },
+      {
+        property: "og:description",
+        content:
+          "Join us to celebrate the wedding of Dr. Prashant & Dr. Anjali on 25 November 2026 at The Auravya Grand, Mohammadi.",
+      },
+      { property: "og:url", content: "https://prashant-weds-anjali.invitingyou.top/" },
+      {
+        property: "og:image",
+        content: "https://prashant-weds-anjali.invitingyou.top/og-image.jpg",
+      },
+      {
+        property: "og:image:secure_url",
+        content: "https://prashant-weds-anjali.invitingyou.top/og-image.jpg",
+      },
+      { property: "og:image:type", content: "image/jpeg" },
+      { property: "og:image:width", content: "1200" },
+      { property: "og:image:height", content: "630" },
+      {
+        property: "og:image:alt",
+        content: "Wedding Invitation of Dr. Prashant & Dr. Anjali",
+      },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Dr. Prashant & Dr. Anjali — Wedding Invitation" },
+      {
+        name: "twitter:description",
+        content:
+          "Join us to celebrate the wedding of Dr. Prashant & Dr. Anjali on 25 November 2026 at The Auravya Grand, Mohammadi.",
+      },
+      {
+        name: "twitter:image",
+        content: "https://prashant-weds-anjali.invitingyou.top/og-image.jpg",
+      },
+    ],
+    links: [
+      {
+        rel: "canonical",
+        href: "https://prashant-weds-anjali.invitingyou.top/",
+      },
     ],
   }),
   component: Invitation,

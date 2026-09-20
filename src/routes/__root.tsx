@@ -76,16 +76,52 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         name: "viewport",
         content: "width=device-width, initial-scale=1, viewport-fit=cover",
       },
-      { title: "Dr. Prashant & Dr. Anjali — 25 November 2026" },
+      { title: "Dr. Prashant & Dr. Anjali — Wedding Invitation" },
       {
         name: "description",
         content:
-          "A royal wedding invitation for Dr. Prashant Mehrotra & Dr. Anjali Gupta. Events, venue, countdown and calendar details.",
+          "Join us to celebrate the wedding of Dr. Prashant & Dr. Anjali on 25 November 2026 at The Auravya Grand, Mohammadi.",
       },
       { property: "og:type", content: "website" },
+      { property: "og:title", content: "Dr. Prashant & Dr. Anjali — Wedding Invitation" },
+      {
+        property: "og:description",
+        content:
+          "Join us to celebrate the wedding of Dr. Prashant & Dr. Anjali on 25 November 2026 at The Auravya Grand, Mohammadi.",
+      },
+      { property: "og:url", content: "https://prashant-weds-anjali.invitingyou.top/" },
+      {
+        property: "og:image",
+        content: "https://prashant-weds-anjali.invitingyou.top/og-image.jpg",
+      },
+      {
+        property: "og:image:secure_url",
+        content: "https://prashant-weds-anjali.invitingyou.top/og-image.jpg",
+      },
+      { property: "og:image:type", content: "image/jpeg" },
+      { property: "og:image:width", content: "1200" },
+      { property: "og:image:height", content: "630" },
+      {
+        property: "og:image:alt",
+        content: "Wedding Invitation of Dr. Prashant & Dr. Anjali",
+      },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Dr. Prashant & Dr. Anjali — Wedding Invitation" },
+      {
+        name: "twitter:description",
+        content:
+          "Join us to celebrate the wedding of Dr. Prashant & Dr. Anjali on 25 November 2026 at The Auravya Grand, Mohammadi.",
+      },
+      {
+        name: "twitter:image",
+        content: "https://prashant-weds-anjali.invitingyou.top/og-image.jpg",
+      },
     ],
     links: [
+      {
+        rel: "canonical",
+        href: "https://prashant-weds-anjali.invitingyou.top/",
+      },
       {
         rel: "stylesheet",
         href: appCss,
