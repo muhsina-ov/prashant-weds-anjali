@@ -76,14 +76,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         name: "viewport",
         content: "width=device-width, initial-scale=1, viewport-fit=cover",
       },
-      { title: "Dr. Prashant & Dr. Anjali — Wedding Invitation" },
+      { title: "Dr. Prashant & Dr. Anjali | Wedding Invitation" },
       {
         name: "description",
         content:
           "Join us to celebrate the wedding of Dr. Prashant & Dr. Anjali on 25 November 2026 at The Auravya Grand, Mohammadi.",
       },
       { property: "og:type", content: "website" },
-      { property: "og:title", content: "Dr. Prashant & Dr. Anjali — Wedding Invitation" },
+      { property: "og:title", content: "Dr. Prashant & Dr. Anjali | Wedding Invitation" },
       {
         property: "og:description",
         content:
@@ -106,7 +106,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         content: "Wedding Invitation of Dr. Prashant & Dr. Anjali",
       },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "Dr. Prashant & Dr. Anjali — Wedding Invitation" },
+      { name: "twitter:title", content: "Dr. Prashant & Dr. Anjali | Wedding Invitation" },
       {
         name: "twitter:description",
         content:
